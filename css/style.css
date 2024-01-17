@@ -1,0 +1,120 @@
+/* ---- Remix icons ----- */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css');
+
+/* ----  Google Fonts ---- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800;900&display=swap');
+
+
+
+
+/* =========== Variable Start Here ============= */
+:root{
+    /* ----- Color Variable ----- */
+    --white-color: #fff;
+    --white-medium: #f3c6c6;
+    --border-color: #f8eaea;
+    --dark-color: #333;
+    --blue-color: blueviolet;  
+    --blue-light: rgba(185, 120, 245, 0.767);  
+    --orange-color:rgb(192, 137, 100);
+    --navy-color: rgb(2, 2, 63);
+    
+    /* ----- Font Size Variable ----- */
+    --xs-font: 14px;
+    --sm-font: 15.5px;
+    --md-font: 18px;
+    --lg-font: 21px;
+    --xl-font: 25px;
+    --2xl-font: 30px;
+    --3xl-font: 35px;
+    
+    /* -----  */
+    --border: 1px solid var(--border-color);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--sm-font);
+    color: var(--dark-color);
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ==========  Common Class Start Here  ========= */
+.container{
+    max-width: 1260px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+    margin: 0 auto;
+}
+.w-50{
+    width: 50%;
+}
+.btn{
+    border: 1px solid var(--border-color);
+    padding: 10px 16px;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+
+/* -----  Felx Class  ------ */
+.flex-center,.flex-center-20{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.flex-center-20{
+    gap: 20px;
+}
+.flex-column-20,.flex-column-25,.flex-column-30{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.flex-column-25{
+    gap: 25px;
+}
+.flex-column-30{
+    gap: 30px;
+}
+.flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
