@@ -108,10 +108,13 @@ section{
 .flex-center-20{
     gap: 20px;
 }
-.flex-column-20,.flex-column-25,.flex-column-30{
+.flex-column-15,.flex-column-20,.flex-column-25,.flex-column-30{
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.flex-column-15{
+    gap: 15px;
 }
 .flex-column-25{
     gap: 25px;
