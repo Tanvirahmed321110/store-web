@@ -1,0 +1,184 @@
+
+
+/* Trending Header */
+.trending-header{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 2px;
+    border-bottom: var(--border);
+}
+.trending-header h2{
+    font-size: var(--2xl-font);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding-right: 25px;
+    position: relative;
+}
+.trending-header div{
+    border-radius: 50%;
+    outline: 2px solid rgb(209, 207, 207);
+    padding: 3px;
+    height: 30px;
+    width: 30px;
+}
+.trending-header div span{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-color: var(--blue-light);
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+}
+
+
+
+
+/* ============== trending-body  ================= */
+.trending-body-inner{
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+
+.offer-product{
+    width: 39%;
+}
+.offer-product-inner{
+    width: 90%;
+    border: 2px solid black;
+    padding:40px 25px;
+    border-radius: 10px;
+}
+.offer-time-title h4{
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+.offer-time-item.flex-center{
+    gap: 10px !important;
+}
+.time{
+    width: 40px;
+    padding: 6px 7px;
+    border-radius: 5px;
+    background-color: var(--white-medium);
+    text-align: center;
+    font-weight: 500;
+}
+/* offer-product-image */
+.offer-product-image {
+    position: relative;
+}
+.offer-product-image .love-icon,.discount,.product-icon{
+    background-color:wheat;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+    cursor: pointer;
+    position: absolute;
+}
+.offer-product-image .love-icon{
+    top: 10px;
+    right: 10px;
+}
+.love-icon i{
+    font-size: var(--md-font);
+}
+.love-icon:hover,.discount:hover,.product-icon:hover{
+    background-color: var(--navy-color);
+    color: white;
+}
+.discount{
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--orange-color);
+    color: white;
+}
+
+
+/* hide-icons */
+.hide-icons{
+    position:absolute;
+    top: 100px;
+    right: 55px;
+    transform: translateX(-20px);
+    transform: translateY(-20px);
+}
+.icon-2{
+    top: 60px;
+}
+
+/* rating start here */
+.rating.flex-center{
+    justify-content: flex-start;
+}
+.rating a i{
+    color: orange;
+    font-size: 18px;
+}
+.rating p{
+    color: var(--orange-color);
+    font-size: 14px;
+}
+
+
+/* item-price */
+.item-price.flex-center{
+    justify-content: flex-start;
+    color: var(--orange-color);
+}
+.new-price big{
+    font-size: var(--lg-font);
+    font-weight: 600;
+}
+.old-price sub{
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+
+
+/* sold-sotck */
+.sold-sotck{
+    color: var(--orange-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sold-sotck span{
+    font-weight: 500;
+}
+
+
+
+/* range */
+.range{
+    width: 100%;
+    background-color: var(--orange-color);
+    height: 3px;
+}
+.range div{
+    width: 34%;
+    background-color: rgb(112, 28, 190);
+    height: 100%;
+}
+
+
+
+
+/* ===========  .trending-products  =========== */
+.trending-products{
+    width: 60%;
+    background-color: orange;
+}

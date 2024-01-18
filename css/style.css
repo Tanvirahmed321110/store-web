@@ -65,6 +65,14 @@ img{
     object-fit: cover;
     object-position: center;
 }
+button{
+    border: none;
+    outline: none;
+    display: inline-block;
+    padding: 8px 13px;
+    border-radius: 4px;
+    font-size: 15px;
+}
 
 /* ==========  Common Class Start Here  ========= */
 .container{
@@ -86,7 +94,9 @@ img{
     border-radius: 30px;
     transition: .3s;
 }
-
+section{
+    margin: 35px 0;
+}
 
 /* -----  Felx Class  ------ */
 .flex-center,.flex-center-20{
@@ -116,5 +126,8 @@ img{
 }
 .flex-wrap{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
     flex-wrap: wrap;
 }

@@ -153,7 +153,7 @@ header{
     background-color: var(--white-medium);
     visibility: hidden;
     opacity: 0;
-    z-index: 2;
+    z-index: 5;
     transition: all  .2s linear; 
     border: var(--border);
     border-radius: 5px;
@@ -230,19 +230,19 @@ header{
 }
 .dress-drop {
     position: absolute;
-    box-shadow: 0 5px 2px 2px wheat;
     border-radius: 5px;
     z-index: 2;
-    /* background-color: var(--border-color); */
-    background-color: white;
-    border: var(--border);
+    background-color: var(--white-medium);
     right: -70px;
     top:2px;
     display: none !important;
+    border: 1px solid var(--white-color);
 }
 .dress-drop-main .dress-drop li{
     border-bottom: 1px solid var(--white-medium);
     padding: 5px 15px;
+    padding-right: 35px;
+    border-bottom: 1px solid var(--white-color);
 }
 .dress-drop-main .dress-drop li:last-child{
     border-bottom: none;
@@ -354,6 +354,7 @@ header{
     z-index: 2;
     /* padding: 15px; */
     top: calc(100% - -0px);
+    /* display: none; */
 }
 .all-departments-drop.flex-column-20{
     gap: 0px ;
@@ -361,4 +362,50 @@ header{
 .all-departments-drop li{
     border-top:var(--border);
     padding:10px 15px;
+}
+.all-departments-drop li a,.all-departments-drop li a i{
+    font-weight: 500;
+}
+/* more-drop */
+.all-departments-drop li{
+    position: relative;
+    
+}
+.all-departments-drop ul{
+    position: absolute;
+    right: -120px;
+    top: 0px;
+    background-color: var(--white-color);
+    border: var(--border);
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s linear;
+    transform: translateX(-10px);
+    z-index: 2;
+}
+.all-departments-drop ul li{
+    padding: 4px 15px;
+}
+.all-departments-drop ul li a{
+    font-size: var(--xs-font);
+}
+.all-departments-drop li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0px);;
+}
+
+
+
+/* =============   brand-items  =============*/
+.brand-items.flex-wrap{
+    justify-content: space-around;
+}
+
+.brand-item img{
+    opacity: .3;
+    transition: .2s;
+}
+.brand-item img:hover{
+    opacity: 1;
 }
