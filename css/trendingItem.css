@@ -80,7 +80,7 @@
 .offer-product-image {
     position: relative;
 }
-.offer-product-image img{
+ .offer-product-image  img{
     height:380px;
 }
 .offer-product-image .love-icon,.discount,.product-icon{
@@ -122,13 +122,12 @@
     top: 80px;
     right: 55px;
     transition: .5s linear;
-    opacity: 1;
 }
 
 
 .hide-icons .icon-1{
-    transform: translateX(70px);
-    transition: .2.5s linear;
+    transform: translateX(50px);
+    transition: .25s linear;
     opacity: 0;
 }
 .product:hover .hide-icons .icon-1{
@@ -136,8 +135,9 @@
     opacity: 1;
 }
 .hide-icons .icon-2{
-    transform: translateX(70px);
-    transition:.3s linear;
+    transform: translateX(50px);
+    transition:.25s linear;
+    transition-delay: .1s;
     opacity: 0;
 }
 .product:hover .hide-icons .icon-2{
@@ -241,4 +241,94 @@
     gap: 20px;
     justify-content: center;
     padding-right: 3px;
+}
+
+
+
+
+
+
+/* ===========  Featured Products Start Here  =============== */
+#feature{
+    background-color: #fffcf8;
+    padding: 25px 0;
+}
+.featured-products{
+    margin: 80px 0;
+}
+.all-featured-products{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    row-gap: 50px;
+}
+
+.featured-product{
+    position: relative;
+    padding: 10px;
+}
+.top-bottom{
+    /* padding: 10px; */
+}
+.top-bottom::after,.top-bottom::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(185, 185, 250, 0.63);
+    height: 3px;
+    transition: all .15s linear;
+    width: 0px;
+}
+
+.top-bottom::after{
+    left: 50%;
+    top: 2px;
+}
+.top-bottom::before{
+    right: 50%;
+    bottom: 0;
+}
+.featured-product:hover .top-bottom::before{
+    width: 100%;
+    right: 0;
+    /* transition-delay: .05s; */
+    transition: .2s;
+}
+.featured-product:hover .top-bottom::after{
+    width: 100%;
+    left: 0;
+    transition-delay: 0.05s;
+}
+.featured-product::after,.featured-product::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(185, 185, 250, 0.63);
+    height: 0px;
+    transition: all .2s linear;
+    width: 3px;
+}
+.featured-product::after{
+    left: 0;
+    top: 50%;
+}
+.featured-product:hover::after{
+    height: 100%;
+    top: 0;
+}
+.featured-product::before{
+    right: 0;
+    top:50%;
+    /* transition-delay: .48s; */
+}
+.featured-product:hover::before{
+    right: 0;
+    height: 100%;
+    top:0
+    /* transition: all linear .2s; */
+}
+.featured-product:hover{
+    /* outline: 1px solid rgba(129, 129, 241, 0.562); */
+    border-radius: 10px;
+}
+.featured-product h2{
+    font-size: var(--md-font);
 }
