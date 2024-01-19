@@ -251,10 +251,13 @@
 /* ===========  Featured Products Start Here  =============== */
 #feature{
     background-color: #fffcf8;
-    padding: 25px 0;
+    padding: 20px 0;
+}
+.view-all a{
+    font-size: var(--xs-font);
 }
 .featured-products{
-    margin: 80px 0;
+    margin: 50px 0;
 }
 .all-featured-products{
     display: grid;
@@ -266,16 +269,18 @@
 .featured-product{
     position: relative;
     padding: 10px;
+    cursor: pointer;
 }
-.top-bottom{
-    /* padding: 10px; */
+.featured-product .offer-product-title h2{
+    font-weight: 500;
+    color: var(--dark-color);
 }
 .top-bottom::after,.top-bottom::before{
     content: '';
     position: absolute;
     background-color: rgba(185, 185, 250, 0.63);
     height: 3px;
-    transition: all .15s linear;
+    transition: all .3s linear;
     width: 0px;
 }
 
@@ -291,19 +296,18 @@
     width: 100%;
     right: 0;
     /* transition-delay: .05s; */
-    transition: .2s;
 }
 .featured-product:hover .top-bottom::after{
     width: 100%;
     left: 0;
-    transition-delay: 0.05s;
+    transition-delay: 0.09s;
 }
 .featured-product::after,.featured-product::before{
     content: '';
     position: absolute;
     background-color: rgba(185, 185, 250, 0.63);
     height: 0px;
-    transition: all .2s linear;
+    transition: all .25s linear;
     width: 3px;
 }
 .featured-product::after{
@@ -331,4 +335,120 @@
 }
 .featured-product h2{
     font-size: var(--md-font);
+}
+
+
+
+
+
+
+
+/* ===========  butter-sale-item  ================= */
+.butter-sale{
+    padding-bottom: 25px;
+}
+.butter-sale-item{
+    border: var(--border);
+    width: 50%;
+    position: relative;
+    height: 300px !important;
+    overflow: hidden;
+}
+.butter-sale-item img{
+    height: 300px;
+    position: relative;
+    width: 100%;
+}
+.butter-sale-item::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.096) ;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    transition: .2s;
+}
+.butter-sale-item:hover::before{
+    width: 0;
+}
+.butter-sale-data h2{
+    font-weight: normal;
+}
+.butter-sale-data{
+    padding: 25px;
+    position: absolute;
+    top: 25px;
+    z-index: 5;
+}
+.butter-sale-data .btn{
+    background-color: var(--orange-color); 
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.butter-sale-data .btn::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    background-color: rgba(0, 0, 128, 0.459);
+    width: 0;
+}
+.butter-sale-data .btn:hover::after {
+    
+    transition: all linear .3s;
+    width: 100%;
+    z-index: 6;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    right: 0;
+}
+
+
+
+/* =============  another items ============== */
+.another-items{}
+.another-items .item{
+    width: 33.33%;
+    border: var(--border);
+    padding:  15px;
+    border-radius: 5px;
+    width: 33%;
+    overflow: hidden;
+}
+.item-image{
+    width: 55%;
+}
+.another-items .item img{
+    width: 100%;
+    transition: all linear .5s;
+    height:240px;
+}
+
+.another-item-data ul.flex-column-15{
+    gap: 8px;
+}
+.another-item-data ul li a{
+    color: var(--orange-color);
+}
+.another-item-data h4{
+    font-weight: 600;
+    font-size: var(--md-font);
+}
+.another-item-data div a{
+    color: var(--dark-color);
+    font-size: var(--xs-font);
+    font-weight: 600;
+}
+.another-items .item.flex-center-20{
+    gap: 10px;
+}
+.another-items.flex-center-20{
+    gap: 15px;
+}
+.another-items .item:hover img{
+    transform: scale(1.1);
+    transition: all linear .5s;
 }

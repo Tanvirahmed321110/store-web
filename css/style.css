@@ -99,9 +99,10 @@ button{
     padding: 10px 16px;
     border-radius: 30px;
     transition: .3s;
+    cursor: pointer;
 }
 section{
-    margin: 35px 0;
+    margin: 40px 0;
 }
 
 /* -----  Felx Class  ------ */

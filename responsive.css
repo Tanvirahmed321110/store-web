@@ -1,0 +1,74 @@
+@media (max-width:991px){
+    .trending-products-inner {
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 35px;
+        column-gap: 30px;
+    }
+    .offer-product{
+        width: 50%;
+    }
+    
+    
+    
+    
+    .all-featured-products {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        row-gap: 50px;
+    }
+}
+
+
+@media (max-width:769px){
+    .trending-products-inner {
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 35px;
+        column-gap: 30px;
+    }
+    .offer-product{
+        width: 45%;
+    }
+    .offer-product-inner {
+        width: 100%;
+        border: 2px solid black;
+        padding: 40px 10px;
+        border-radius: 10px;
+    }
+    
+    
+    
+    /*====  tremdomg body inner items  ==== */
+    .trending-body-inner {
+        gap: 25px;
+    }
+    
+    
+    .all-featured-products {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        row-gap: 50px;
+    }
+    
+    
+    /* butter sale item */
+    .butter-sale-content-area.flex-center-20 {
+        flex-direction: column;
+    }
+    .butter-sale-item{
+        width: 100%;
+    }
+    /* .item{
+        width: 49%;
+    } */
+    /* .another-items.flex-center-20 {
+        width: calc(100% - 15px);
+    } */
+    .another-items.flex-center-20{
+        flex-wrap: wrap;
+    }
+    .another-items .item{
+        max-width:49% ;
+    }
+}
