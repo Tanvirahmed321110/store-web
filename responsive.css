@@ -9,13 +9,19 @@
     }
     
     
-    
-    
     .all-featured-products {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 10px;
         row-gap: 50px;
+    }
+    
+    
+    .footer-body{
+        width: 80%;
+        grid-template-columns: repeat(2,1fr);
+        margin-bottom: 65px;
+        text-align: center;
     }
 }
 
@@ -70,5 +76,10 @@
     }
     .another-items .item{
         max-width:49% ;
+    }
+    
+    .contact-content-area.flex-center{
+        flex-direction: column;
+        gap: 50px;
     }
 }
