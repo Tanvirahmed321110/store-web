@@ -71,3 +71,60 @@ colorsContainer.addEventListener('click', (event) => {
     element.classList.toggle('active')
   })
  }
+ 
+ 
+ 
+ 
+//  plus icon
+
+const plusIcons = document.querySelectorAll('.datiles-item .plus-icon');
+const detailsBoxs = document.querySelectorAll('.datiles-item .datiles-box');
+
+for(let i=0; i<plusIcons.length; i++){
+   const  eachIcon = plusIcons[i];
+  eachIcon.addEventListener('click',function (event) {
+    let closeBox = detailsBoxs[i]
+    closeBox.classList.toggle('closeBox')
+  })
+}
+
+
+
+// big image
+const bigImage = document.getElementById('big-image');
+const smallImgs = document.querySelectorAll('.small-img');
+
+smallImgs.forEach((eachImg)=>{
+  eachImg.addEventListener('click',function(event){
+    bigImage.src = eachImg.src
+  })
+})
+
+
+// quantity input 
+const quantityInput = document.querySelector('#quintityInput');
+const plusBtn = document.querySelector('#quantityPlus')
+const minusBtn = document.querySelector('#quantityMinus')
+
+
+const updateQuintity = (operation) =>{
+  let currentValue = parseInt(quantityInput.value);
+  
+  if(operation === 'plus' && currentValue<5){
+    currentValue++;
+  }
+  else if(operation === 'minus' && currentValue>1){
+    currentValue--;
+  }
+  quantityInput.value = currentValue;
+}
+
+
+function addEvent (BtnId,operation){
+  BtnId.addEventListener('click',function(){
+    updateQuintity(operation)
+  })
+}
+
+addEvent(plusBtn,'plus')
+addEvent(minusBtn,'minus')

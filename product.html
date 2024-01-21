@@ -353,18 +353,18 @@
                             <div class="product-page-image w-50">
                                 <div class="product-page-image-area flex-column-20">
                                     <div class="big-image">
-                                        <img src="assets/products/shoe1.jpg" alt="">
+                                        <img id="big-image" src="assets/products/shoe1.jpg" alt="">
                                     </div>
                                     <div class="small-images flex-center">
-                                        <div><img src="assets/products/shoe1-1.jpg" alt=""></div>
-                                        <div><img src="assets/products/shoe1-2.jpg" alt=""></div>
-                                        <div><img src="assets/products/shoe1-3.jpg" alt=""></div>
+                                        <div><img class="small-img" src="assets/products/shoe1-1.jpg" alt=""></div>
+                                        <div><img class="small-img" src="assets/products/shoe1-2.jpg" alt=""></div>
+                                        <div><img class="small-img" src="assets/products/shoe1-3.jpg" alt=""></div>
                                     </div>
                                 </div>
                             </div>
                             <!-- Product page Image end here -->
                             
-                            <!-- Product page data start here -->
+                            <!--------------- Product page data start here ------------------>
                             <div class="product-page-data">
                                 <div class="product-page-data-area flex-column-25">
                                     <!-- product title  -->
@@ -391,7 +391,7 @@
                                     </div>
                                     <!-- product reating end here -->
                                     
-                                    <!-- stoct  -->
+                                    <!-- stoct sold  -->
                                     <div class="in-stock">
                                         <div class="flex-start">
                                             <h5>In Stock</h5>
@@ -409,6 +409,16 @@
                                         </div>
                                     </div>
                                     <!-- price start end -->
+                                    
+                                    <div class="sold-stock ">
+                                        <div class="sold-stock-header flex-between">
+                                            <div>Sold: <b>13</b></div>
+                                            <div>Stock: <b>107</b></div>
+                                        </div>
+                                        <div class="range">
+                                            <p></p>
+                                        </div>
+                                    </div>
                                     
                                     <!-- color start here -->
                                     <div class="product-color flex-column-15">
@@ -434,9 +444,9 @@
                                     <!-- add to cart -->
                                     <div class="add-to-cart-area flex-start">
                                         <div class="flex-start">
-                                            <button><i class="ri-subtract-line"></i></button>
-                                            <input type="number" value="1" min="0">
-                                            <button><i class="ri-add-line"></i></button>
+                                            <button id="quantityMinus"><i class="ri-subtract-line"></i></button>
+                                            <input id="quintityInput" type="number" value="1" min="0">
+                                            <button id="quantityPlus"><i class="ri-add-line"></i></button>
                                         </div>
                                         <div>
                                             <a class="btn" href="#">Add To Cart</a>
@@ -462,7 +472,7 @@
                                             <!-- datiles item -->
                                             <div class="datiles-item flex-column-15">
                                                 <div>
-                                                    <h3>+ INFORMATION</h3>
+                                                    <h3 class="plus-icon">+ INFORMATION</h3>
                                                 </div>
                                                 <ul class="datiles-box">
                                                     <li>Brand Nike</li>
@@ -476,10 +486,10 @@
                                             <!-- datiles item -->
                                             <div class="datiles-item flex-column-15">
                                                 <div>
-                                                    <h3>+ DETAILS</h3>
+                                                    <h3 class="plus-icon">+ DETAILS</h3>
                                                 </div>
                                                 <div class="datiles-box">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, repellat tempore quasi facilis repellendus deleniti corrupti. Veritatis reiciendis accusantium temporibus aliquid facere nostrum quo beatae numquam ducimus, in, porro a.</p>  <br>
+                                                    <p>This Items is ipsum dolor sit amet consectetur adipisicing elit. Excepturi, repellat tempore quasi facilis repellendus deleniti corrupti. Veritatis reiciendis accusantium temporibus aliquid facere nostrum quo beatae numquam ducimus, .</p>  <br>
                                                     
                                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur incidunt porro, provident perferendis voluptatibus tempore voluptate deserunt eveniet excepturi. Aspernatur dolores veritatis labore libero dicta. Ab provident cupiditate quae similique.</p>
                                                 </div>
@@ -488,9 +498,9 @@
                                             <!-- datiles item -->
                                             <div class="datiles-item flex-column-15">
                                                 <div>
-                                                    <h3>+CUSTOM</h3>
+                                                    <h3 class="plus-icon">+CUSTOM</h3>
                                                 </div>
-                                                <table>
+                                                <table class="datiles-box">
                                                     <thead>
                                                         <tr>
                                                             <th>Size</th>
@@ -529,6 +539,148 @@
                                             </div>
                                         </div>
                                     </div>
+                                    
+                                    
+                                    
+                                    <!-- ------------------------- review section  -------------------------- -->
+                                    <section>
+                                        <div class="review">
+                                            <div class="review-content-area flex-column-25">
+                                                <!-- REVIEW HEADER START HERE -->
+                                                <div class="review-main-header">
+                                                    <div>
+                                                        <h3 class="flex-start">- REVIEWS <p>122</p></h3>
+                                                    </div>
+                                                </div>
+                                                <!--  --------------------- REVIEW BODY START HERE ------------------------ -->
+                                                <div class="review-body">
+                                                    <div class="review-body-area flex-column-25">
+                                                        <!-- avreage review start -->
+                                                        <div class="average-review flex-column-15">
+                                                            <div>
+                                                                <h3>Customers Reviews</h3>
+                                                            </div>
+                                                            <div class="total-review flex-start">
+                                                                <h2>4.9</h2>
+                                                                <p>122 Reviews</p>
+                                                            </div>
+                                                            <!-- write review start -->
+                                                            <div class="wirte-review">
+                                                                <div>
+                                                                    <a href="#" class="btn">Write review</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- avreage review end -->
+                                                        
+                                                        <!-- --------------------  USER REVIRIEWS  START --------------------- -->
+                                                        <div class="user-reviews">
+                                                            <!-- each user review start here -->
+                                                            <div class="user-review flex-column-15">
+                                                                <!-- user reiew name -->
+                                                                <div class="user-name">
+                                                                    <h4>Ibna Foysal</h4>
+                                                                    <p>23/12/23</p>
+                                                                </div>
+                                                                
+                                                                <!-- rating -->
+                                                                <div class="star">
+                                                                    <a href="#"><i class="ri-star-fill"></i></a>
+                                                                    <a href="#"><i class="ri-star-fill"></i></a>
+                                                                    <a href="#"><i class="ri-star-fill"></i></a>
+                                                                    <a href="#"><i class="ri-star-fill"></i></a>
+                                                                    <a href="#"><i class="ri-star-fill"></i></a>
+                                                                </div>
+                                                                <!-- review title  -->
+                                                                <div class="review-data ">
+                                                                    <div class="review-title">
+                                                                        <h4>NICE ITEMS </h4>
+                                                                    </div>
+                                                                    <div class="review-details">
+                                                                        <p>
+                                                                            Hello  ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, tenetur voluptates culpa provident at harum quos nobis molestias. Quaerat at sequi consequatur culpa deleniti eius sed nulla explicabo accusantiu.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- each user review end here -->
+                                                            <!-- each user review start here -->
+                                                            <div class="user-review flex-column-15">
+                                                                <!-- user reiew name -->
+                                                                <div class="user-name">
+                                                                    <h4>Tanvir Ahemd</h4>
+                                                                    <p>23/2/23</p>
+                                                                </div>
+                                                                
+                                                                <!-- rating -->
+                                                                <div class="star">
+                                                                    <a href="#"><i class="ri-star-fill"></i></a>
+                                                                    <a href="#"><i class="ri-star-fill"></i></a>
+                                                                    <a href="#"><i class="ri-star-fill"></i></a>
+                                                                    <a href="#"><i class="ri-star-fill"></i></a>
+                                                                    <a href="#"><i class="ri-star-half-line"></i></a>
+                                                                </div>
+                                                                <!-- review title  -->
+                                                                <div class="review-data ">
+                                                                    <div class="review-title">
+                                                                        <h4>NICE ITEMS </h4>
+                                                                    </div>
+                                                                    <div class="review-details">
+                                                                        <p>
+                                                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, tenetur voluptates culpa provident at harum quos nobis molestias. Quaerat at sequi consequatur culpa deleniti eius sed nulla explicabo accusantium perferendis.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- each user review end here -->
+                                                            <div class="view-all-review">
+                                                                <a href="#">View all Reviews <i class="ri-arrow-right-line"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <!-- USER REVIEW END HERE -->
+                                                    </div>
+                                                    <div class="write-a-review flex-column-25">
+                                                        <div class="write-review-header flex-column-15">
+                                                            <div>
+                                                                <h3>Write a review</h3>
+                                                            </div>
+                                                            <div>
+                                                                <div class="rating ">
+                                                                    <a class="rating-fill" href="#"><i class="ri-star-fill"></i></a>
+                                                                    <a class="rating-fill" href="#"><i class="ri-star-fill"></i></a>
+                                                                    <a href="#"><i class="ri-star-fill"></i></a>
+                                                                    <a href="#"><i class="ri-star-fill"></i></a>
+                                                                    <a href="#"><i class="ri-star-fill"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- review form start -->
+                                                        <div class="write-review-form ">
+                                                            <form action="#" class="flex-column-20">
+                                                                <div class="">
+                                                                    <label for="name">Name</label>
+                                                                    <input type="text" id="name">
+                                                                </div>
+                                                                <div class="">
+                                                                    <label for="summery">Summery</label>
+                                                                    <input type="text" id="summery">
+                                                                </div>
+                                                                <div class="">
+                                                                    <label for="review">Review</label>
+                                                                    <textarea name="" id="review" cols="30" rows="10"></textarea>
+                                                                </div>
+                                                                
+                                                                <div>
+                                                                    <a href="#" class="btn">Submite review</a>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- review body end here -->
+                                            </div>
+                                        </div>
+                                    </section>
                                 </div>
                             </div>
                             <!-- Product page Image end here -->
