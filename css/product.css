@@ -1,0 +1,216 @@
+.all-departments-drop{
+    transition: .5s linear;opacity: 0;
+}
+.all-departments-drop.none{
+    opacity: 1;
+    transition: 1s;
+}
+
+
+
+/* -----  brit-cam  ------ */
+.brit-cam p{
+    font-weight: 500;
+    color: var(--dark-color);
+    font-size: 14px;
+}
+.brit-cam p span{
+    font-weight: 400;
+    color: var(--orange-color);
+}
+
+
+
+/*=============  product-all-data  ================*/
+.product-all-data.flex-between{
+    gap: 60px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.product-all-data .product-page-image , .product-all-data .product-page-data{
+    width: 50%;
+}
+
+/*===========  products image  =============*/
+.product-page-image{
+}
+.big-image img{
+    width: 100%;
+    min-height: 500px;
+}
+.small-images div{
+    width: 33.33%;
+}
+.small-images img{
+    height: 180px;
+    width: 100%;
+    border: var(--border);
+    cursor: pointer;
+}
+
+
+
+
+
+/*===========  product-page-data  ============*/
+.product-page-data{
+}
+.product-page-data-area .product-title h2{
+    font-size: var(--2xl-font);
+    font-weight: 700;
+}
+
+/* -------  rating  ------- */
+.product-rating-data.flex-center{
+    justify-content: flex-start;
+}
+.product-rating-data .total-rating{
+    color: var(--orange-color);
+    font-size: 14px;
+}
+.product-rating-data .add-review p{
+    font-size: 14px;
+    color: var(--dark-color);
+    font-weight: 500;
+}
+.product-page-data-area .in-stock h5{
+    color: gray;
+    font-size: 16px;
+    font-weight: 600;
+}
+.product-page-data-area .in-stock span{
+    color: var(--orange-color);
+    font-size: 14px;
+}
+
+/* -------  price  ------- */
+.product-page-data-area .price .new-price{
+    font-size: var(--lg-font);
+    font-family: 'Trebuchet MS',;
+    color:darkcyan;
+}
+.product-page-data-area .price .old-price{
+    text-decoration: line-through;
+    color: var(--orange-color);
+}
+
+/* color */
+.product-size.flex-column-15,.product-color.flex-column-15{
+    gap: 10px;
+}
+.product-color,.product-size{
+    font-weight: 500;
+}
+.product-color .color{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 3px;
+    position: relative;
+}
+.product-color .active::after{
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    border: 2px solid rgb(71, 65, 52);
+    height: 34px;
+    width: 34px;
+    top: -4px;
+    left: -4px;
+}
+.orange{
+    background-color: orange;
+}
+.black{
+    background-color: black;
+}
+.gray{
+    background-color: gray;
+}
+
+
+
+/* product-size */
+.product-size .flex-start,.product-color .flex-start{
+    padding-left: 15px;
+}
+.size{
+    width: 30px;
+    height: 30px;
+    border: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 400;
+}
+.size.active{
+    outline: 1px solid black;
+    border-radius: 2px;
+}
+
+
+/* add to cart area */
+.add-to-cart-area{
+    padding-left: 15px;
+    margin:10px 0;
+}
+.add-to-cart-area button{
+    border: var(--border);
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px 17px;
+    font-weight: 600;
+}
+.add-to-cart-area input{
+    font-weight: 600;
+    width: 45px;
+    padding: 9px 2px;
+    outline: 0;
+    font-size: 16px;
+    border: var(--border);
+}
+.add-to-cart-area .btn{
+    background-color: var(--orange-color);
+    color: white;
+    padding: 10px 30px ;
+}
+
+
+/* share-content-area */
+.share-content-area{
+    font-weight: 600;
+}
+
+
+
+/* datiles-item */
+.datiles-item li,.datiles-item p{
+    font-size: 14.5px;
+    color: var(--dark-color);
+}
+.datiles-item table{
+    width: 85%;
+    margin-left: 20px;
+    border-collapse: collapse;
+}
+.datiles-item th{
+    font-weight: 600;
+}
+.datiles-item tr,.datiles-item td,.datiles-item th{
+    text-align: left;
+    border: var(--border);
+    padding: 3px 5px;
+}
+.datiles-box{
+    margin-left: 20px;
+}
+.datiles-item tr{
+    font-size: 14.5px;
+}
+.datiles-item tr sub{
+    font-weight: 400;
+    color: var(--orange-color);
+    font-size: 14px;
+}

@@ -33,3 +33,41 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   
+  
+  
+  // header search
+  const dropBtn = document.getElementById('search-bar');
+  const searchDropDown = document.getElementById('all-departments-drop');
+  
+  dropBtn.addEventListener('click',function(){
+    dropBtn.classList.toggle("ri-close-line");
+    searchDropDown.classList.toggle('none')
+  })
+  
+  
+// color 
+const colorsContainer = document.querySelector('.product-colors');
+
+colorsContainer.addEventListener('click', (event) => {
+    if (event.target.classList.contains('color')) {
+        const elements = document.querySelectorAll('.product-colors .color');
+        elements.forEach((each) => {
+            each.classList.remove('active');
+        });
+        event.target.closest('.color').classList.add('active');
+    }
+});
+
+
+// size 
+ const productSizeList = document.querySelectorAll('.size');
+ for(i=0;i<productSizeList.length;i++){
+  let element = productSizeList[i];
+
+  element.addEventListener('click',function(){
+    for(j=0;j<productSizeList.length;j++){
+      productSizeList[j].classList.remove('active');
+    }
+    element.classList.toggle('active')
+  })
+ }

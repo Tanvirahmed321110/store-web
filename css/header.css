@@ -299,6 +299,10 @@ header{
 #search-bar{
     color: var(--white-color);
     font-size: 20px;
+    transition: .3s;
+}
+#search-bar:hover{
+    transform: rotate(180deg);
 }
 
 /* header-search-right */

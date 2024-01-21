@@ -141,3 +141,9 @@ section{
     gap: 30px;
     flex-wrap: wrap;
 }
+.flex-start{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
