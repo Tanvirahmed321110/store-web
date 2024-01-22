@@ -1,0 +1,225 @@
+
+
+.cart-content-area .cart-header h2{
+    font-weight: 700;
+    font-size: var(--2xl-font);
+}
+
+
+.cart-body.flex-between{
+    gap: 40px;
+    align-items: flex-start;
+}
+.cart-items-area{
+    width: 75%;
+    color: var(--dark-color);
+}
+.cart-items-area table{
+    width: 95%;
+    border-collapse: collapse;
+}
+.cart-body table .thead{
+    background-color: #fcf0f0;
+}
+.cart-body table .thead th{
+    padding: 25px;
+    text-align: left;
+    width: 25%;
+}
+
+.cart-body table tbody tr{
+    border-bottom: var(--border);
+}
+.cart-body table tbody td{
+    padding:  25px 15px;
+    width: 20%;
+}
+.cart-body table tbody h4,.cart-body table tbody h3{
+    font-weight: 500 ;
+    color: var(--dark-color);
+}
+.cart-body table tbody .img-title h4{
+    font-weight: 700 ;
+}
+.cart-body table tbody .img-title p{
+    font-size: 14.5px;
+}
+
+.cart-body table td:first-child{
+    width: 35%;
+    padding-left: 0;
+}
+
+
+/*------- img-title ----------*/
+.cart-body .img-title.flex-start{
+    gap: 25px;
+}
+.title-image{
+    width: 30%;
+}
+.cart-body .item-image {
+    width: 30%;
+}
+.cart-body .item-image img{
+    width: 90px;
+    height: 70px;
+    padding: 3px;
+    border: var(--border);
+}
+
+
+
+/*--------- quintity --------*/
+.cart-body .quintity{
+    border: var(--border);
+    padding: 5px 0;
+    margin: 0 auto;
+    width: 140px;
+}
+.cart-body .quintity input{
+    width: 40px;
+    border: none;
+    padding: 5px;
+    font-weight: bold;
+}
+.cart-body .quintity button{
+    /* background-color: transparent; */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cart-body .quintity.flex-center{
+    gap: 5px;
+}
+
+
+
+
+
+
+
+
+
+/* =============  coupon  ============ */
+.coupon{
+    background-color: var(--dark-color);
+    height: 48px;
+}
+.coupon .coupon-input{
+    padding: 4px;
+    height: inherit;
+    width: 75%;
+}
+.coupon .coupon-input input{
+    height: 40px;
+    width: 100%;
+    padding: 3px;
+    outline: none;
+}
+
+.coupon .cupon-btn {
+    flex-grow: 1;
+    height: 100%;
+}
+.coupon .cupon-btn button{
+    width: 100%;
+    background-color: transparent;
+    color: var(--white-color);
+    height: 100%;
+}
+.coupon .cupon-btn button:hover{
+    background-color: rgb(63, 63, 80);
+    border: 0;
+    display: inline-block;
+    height: 100%;
+}
+
+
+
+/*============ cart-cal-body-area ============= */
+.cart-cal-shipping{
+    width: 30%;
+    color: var(--dark-color);
+}
+.cart-cal-body-area{
+    background-color: #f3f3f3;
+    padding:50px  25px 25px;  
+}
+
+
+.cart-shipping-address-area{
+    width: 90%;
+    margin: 0 auto;
+}
+.cart-cal-shipping-item input, .cart-cal-shipping-item select{
+    width: 100%;
+    background-color:var(--white-color);
+    outline: 0;
+    border: 0;
+    padding: 10px;
+    margin-top: 5px;font-size: 15px;
+}
+.cart-cal-shipping-item select option{
+    padding: 5px 0;
+    background-color: gray;
+}
+.cart-cal-shipping-item label{
+    font-weight: 700;
+    font-size: 14px;
+    padding-bottom: 6px;
+}
+
+
+
+
+/* --------- delivery-options ----------*/
+.delivery-option.flex-start{
+    align-items: center;
+    gap: 8px;
+}
+.delivery-option label{
+    font-weight: 500;
+}
+.delivery-option{
+    margin-top: 2px;
+}
+
+
+
+
+/*---------- price area ------------*/
+.price-area{
+    background-color: #cebebe;
+    
+    padding: 25px;
+}
+.price-content-area.flex-column-15{
+    gap: 10px;
+}
+.price-item.total-price{
+    border-top: var(--border);
+}
+.price-item.total-price h2{
+    font-weight: 800;
+    font-size: var(--2xl-font);
+}
+
+/* --------- check out ---------*/
+.price-area .checkout{
+    width: 80%;
+    margin: 0 auto;
+}
+.price-area .checkout button{
+    margin-top: 35px;
+    width: 100%;
+    padding: 15px ;
+    border-radius: 50px;
+    letter-spacing: .6px;
+    background-color: darkslategray;
+    color: white;
+    font-size: 17px;
+}
+.price-area .checkout button:hover{
+    background-color: blueviolet;
+}
