@@ -1,0 +1,135 @@
+
+.catagory-content-area{
+    display: flex;
+    justify-content: unset;
+    gap: 100px;
+}
+.catagory-items{
+    width: 25%;
+}
+.catagory-datiles{
+    flex-grow: 1;
+}
+.catagory-items .catagory-item{
+    border-bottom: var(--border);
+    padding-bottom: 20px;
+}
+.catagory-all-list ul{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+.catagory-all-list ul li{
+    display: flex;
+    justify-content: space-between;
+}
+.catagory-all-list ul li div:first-child{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.catagory-all-list ul li .checked{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    border: 2px solid black;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.catagory-all-list ul li .checked::before{
+    content: '';
+    position: absolute;
+    top: 1.7px;
+    height: 8px;
+    width: 8px;
+    background-color: blue;
+    left: 2.8px;
+    opacity: 0;
+}
+.catagory-all-list ul li input{
+    
+}
+.catagory-all-list ul li input:checked + label .checked::before{
+    opacity: 1;
+}
+
+
+
+
+/* color */
+.color .each-color{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.color .each-color.red{
+    background-color: red;
+}
+.color .each-color.gray{
+    background-color: gray;
+}
+.color .each-color.orange{
+    background-color: orange;
+}
+.color .each-color.blue{
+    background-color: blue;
+}
+/*------------  pricing  -------------*/
+.pricing{width: 222px;}
+.price-tracker input{
+    width: 100%;
+}
+.price-tracker input::-webkit-slider-runnable-track {
+    background-color: gainsboro;
+    border-radius: 14px;
+}
+
+.price-range span{
+    color: var(--orange-color);
+}
+
+
+
+
+
+
+
+
+/* bitcam */
+.bitcam p{
+    font-size: 14px;
+}
+.bitcam p span{
+    color: var(--orange-color);
+}
+.women-data p{
+    line-height: 25px;
+    color: var(--dark-color);
+}
+
+.drop-item{
+    padding: 5px 10px;
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+.drop-blank{
+    width: 25%;
+}
+.drop-item h4{
+    font-weight: 500;
+    color: var(--orange-color);
+}
+.drop-item.no-drop-down{
+    background-color: transparent;
+    color: var(--dark-color) ;
+}
+.drop-item.no-drop-down h4{
+    color: var(--dark-color) ;
+}
+
+.all-featured-products{
+    grid-template-columns: repeat(3,1fr);
+}

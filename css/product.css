@@ -340,11 +340,11 @@
     padding: 15px 0;
     font-weight: 600;
 }
-.rating a i{
+.write-review-header .rating a i{
     color: black;
     font-size: 24px;
 }
-.rating .rating-fill  i{
+.write-review-header .rating .rating-fill  i{
     color: orange;
     font-size: 24px;
 }
