@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/trendingItem.css">
     <link rel="stylesheet" href="css/product.css">
-    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/checkout.css">
     <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
@@ -336,334 +336,104 @@
     
     
     <main>
-        
-        <!-- ----------cart section start here------------- -->
-        <section>
-            <div class="cart">
-                <div class="cart-inner container">
-                    <div class="cart-content-area flex-column-25">
-                        <!-- cart Header start -->
-                        <div class="cart-header">
-                            <div>
-                                <h2>Shopping Cart</h2>
+        <section id="checkout">
+            <div class="checkout container">
+                <div class="checkout-content-area flex-between">
+                    <!-- full address area start-->
+                    <div class="full-address">
+                        <div class="full-address-area flex-column-25">
+                            <div class="full-address-area-header">
+                                <h2>Shipping Address</h2>
+                            </div>
+                            
+                            <!-- full address form area -->
+                            <div class="full-address-form-area">
+                                <form action="#" class="flex-column-25">
+                                    <div class="shipping-input">
+                                        <label for="#">Email Address*</label>
+                                        <input type="email">
+                                    </div>
+                                    <div class="shipping-input">
+                                        <label for="#">Phone*</label>
+                                        <input type="number">
+                                    </div>
+                                    <div class="shipping-input">
+                                        <label for="#">Full Name*</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="shipping-input"> 
+                                        <label for="#">Compani Name*</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="shipping-input">
+                                        <label for="#">Street Address*</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="shipping-input">
+                                        <label for="#">City*</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="shipping-input">
+                                        <label for="#">Zip Code*</label>
+                                        <input type="number">
+                                    </div>
+                                    <div class="shipping-input">
+                                        <label for="">Order Notis (Optional)*</label>
+                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                    </div>
+                                    <div class="shipping-input flex-start" >
+                                        <input type="checkbox" name="" id=""> <span>Create an account?</span>
+                                    </div>
+                                    <div class="shipping-input">
+                                        <h1>Shipping <br> Methods</h1>
+                                    </div>
+                                    <div class="shipping-input flex-start">
+                                        <input type="radio"> <span>$5.00 Flat Rate </span>
+                                    </div>
+                                    <div class="shipping-input">
+                                        <button>Place Order</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                        <!-- cart header end -->
-                        <!-- cart body -->
-                        <div class="cart-body flex-between">
-                            <!-- cart select items data start -->
-                            <div class="cart-items-area">
-                                <table>
-                                    <thead class="thead">
-                                        <tr class="">
-                                            <th>Item</th>
-                                            <th>Price</th>
-                                            <th>Qty</th>
-                                            <th>Subtotal</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <!-- each item data-->
-                                        <tr>
-                                            <!-- image and title -->
-                                            <td>
-                                                <div class="img-title flex-start">
-                                                    <div class="item-image">
-                                                        <img src="assets/products/electronic5.jpg"  alt="">
-                                                    </div>
-                                                    <div class="item-title-color flex-column-15">
-                                                        <div>
-                                                            <h4>Univision LED350 17" 60Hz </h4>
-                                                        </div>
-                                                        <div><p>Color : red</p></div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <!-- price -->
-                                            <td>
-                                                <div><h3>$122.00</h3></div>
-                                            </td>
-                                            <!-- quintity -->
-                                            <td>
-                                                <div class="quintity flex-center">
-                                                    <button>+</button>
-                                                    <input type="number" value="1">
-                                                    <button>-</button>
-                                                </div>
-                                            </td>
-                                            <!-- subtitle  -->
-                                            <td>
-                                                <div class="subtitle flex-center">
-                                                    <div>
-                                                        <h4>$122.00</h4>
-                                                    </div>
-                                                    <div>
-                                                        <button>X</button>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        
-                                        <!-- each item data-->
-                                        <tr>
-                                            <!-- image and title -->
-                                            <td>
-                                                <div class="img-title flex-start">
-                                                    <div class="item-image">
-                                                        <img src="assets/products/electronic1.jpg"  alt="">
-                                                    </div>
-                                                    <div class="item-title-color flex-column-15">
-                                                        <div>
-                                                            <h4>Item AH LED Monitor 24"</h4>
-                                                        </div>
-                                                        <div><p>Color : red</p></div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <!-- price -->
-                                            <td>
-                                                <div><h3>$122.00</h3></div>
-                                            </td>
-                                            <!-- quintity -->
-                                            <td>
-                                                <div class="quintity flex-center">
-                                                    <button>+</button>
-                                                    <input type="number" value="1">
-                                                    <button>-</button>
-                                                </div>
-                                            </td>
-                                            <!-- subtitle  -->
-                                            <td>
-                                                <div class="subtitle flex-center">
-                                                    <div>
-                                                        <h4>$122.00</h4>
-                                                    </div>
-                                                    <div>
-                                                        <button>X</button>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <!-- each item data-->
-                                        <tr>
-                                            <!-- image and title -->
-                                            <td>
-                                                <div class="img-title flex-start">
-                                                    <div class="item-image">
-                                                        <img src="assets/products/electronic3.jpg"  alt="">
-                                                    </div>
-                                                    <div class="item-title-color flex-column-15">
-                                                        <div>
-                                                            <h4>New Brand Logi HeadPhone  </h4>
-                                                        </div>
-                                                        <div><p>Color : red</p></div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <!-- price -->
-                                            <td>
-                                                <div><h3>$122.00</h3></div>
-                                            </td>
-                                            <!-- quintity -->
-                                            <td>
-                                                <div class="quintity flex-center">
-                                                    <button>+</button>
-                                                    <input type="number" value="1">
-                                                    <button>-</button>
-                                                </div>
-                                            </td>
-                                            <!-- subtitle  -->
-                                            <td>
-                                                <div class="subtitle flex-center">
-                                                    <div>
-                                                        <h4>$122.00</h4>
-                                                    </div>
-                                                    <div>
-                                                        <button>X</button>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- cart select items data start end-->
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <!-- cart calculation and shipping address start-->
-                            <div class="cart-cal-shipping">
-                                <div class="cart-cal-shipping-area">
-                                    <!-- coupon code area start -->
-                                    <div class="coupon flex-between">
-                                        <div class="coupon-input">
-                                            <input type="text" placeholder="ENTER COUPON">
-                                        </div>
-                                        <div class="cupon-btn">
-                                            <button>APPLY</button>
-                                        </div>
+                    </div>
+                    <!-- full address area end-->
+                    
+                    <!-- ------------order summery area start------------->
+                    <div class="order-summery">
+                        <div class="order-summery-area">
+                            <!-- order summery price -->
+                            <div class="order-summery-price">
+                                <div>
+                                    <h2>Order Summery</h2>
+                                </div>
+                                <div class="price-items">
+                                    <div class="price-item">
+                                        <div><p>Subtitle</p></div>
+                                        <div><strong>$122.00</strong></div>
                                     </div>
-                                    <!-- coupon code area end -->
-                                    
-                                    <div class="cart-cal-body">
-                                        <div class="cart-cal-body-area flex-column-25">
-                                            <!-- Header in Cart cal body -->
-                                            <div>
-                                                <h3>EXTIMETE SHIPPING AND TEXT</h3>
-                                            </div>
-                                            
-                                            <!-- Shipping Adress Input Start Here -->
-                                            <div class="cart-shipping-address">
-                                                <div class="cart-shipping-address-area flex-column-20">
-                                                    <!-- county drop down -->
-                                                    <div class="cart-cal-shipping-item">
-                                                        <label for="county">COUNTRY</label>
-                                                        <select name="" id="">
-                                                            <option value="">Bangladesh</option>
-                                                            <option value="">India</option>
-                                                            <option value="">Pakistan</option>
-                                                            <option value="">USA</option>
-                                                        </select>
-                                                    </div>
-                                                    <!-- county drop down end -->
-                                                    
-                                                    <!-- State Drop down start-->
-                                                    <div class="cart-cal-shipping-item ">
-                                                        <label for="county">STATE / DIVITION</label>
-                                                        <select name="" id="">
-                                                            <option value="">Dhaka</option>
-                                                            <option value="">Rangpur</option>
-                                                            <option value="">Shylet</option>
-                                                            <option value="">Dinajpur</option>
-                                                        </select>
-                                                    </div>
-                                                    <!-- State Drop down end -->
-                                                    
-                                                    <!-- ZIP CODE INPUT -->
-                                                    <div class="cart-cal-shipping-item ">
-                                                        <label for="zip">ZIP CODE</label>
-                                                        <input type="text">
-                                                    </div>
-                                                    <!-- ZIP CODE INPUT -->
-                                                    
-                                                    <!-- delivary option -->
-                                                    <div class="delivery-options ">
-                                                        <div class="delivery-option flex-start">
-                                                            <input type="radio" id="flat">
-                                                            <label for="flat">Flat: <span>5.00$</span></label>
-                                                        </div>
-                                                        <div class="delivery-option flex-start">
-                                                            <input type="radio" id="free">
-                                                            <label for="free">Free: <span>0.00$</span></label>
-                                                        </div>
-                                                    </div>
-                                                    <!-- delivary option -->
-                                                </div>
-                                            </div>
-                                            <!-- Shipping Adress Input End Here -->
-                                        </div>
-                                        
-                                        
-                                            
-                                        <!-- ---------  price section start here  ---------- -->
-                                        <div class="price-area">
-                                            <div class="price-content-area flex-column-15">
-                                                <!-- subtotal price -->
-                                                <div class="price-item flex-between">
-                                                    <div>
-                                                        <h4>Subtotal  </h4>
-                                                    </div>
-                                                    <div>
-                                                        <p>$122.00</p>
-                                                    </div>
-                                                </div>
-                                                <!-- subtotal price end -->
-                                                
-                                                <!-- discount price -->
-                                                <div class="price-item flex-between">
-                                                    <div>
-                                                        <h4>Subtotal  </h4>
-                                                    </div>
-                                                    <div>
-                                                        <p>$122.00</p>
-                                                    </div>
-                                                </div>
-                                                <!-- discount price end -->
-                                                
-                                                <!-- shipping price start -->
-                                                <div class="price-item flex-between">
-                                                    <div>
-                                                        <h4>Shipping <span>Flat</span> </h4>
-                                                    </div>
-                                                    <div>
-                                                        <p>$122.00</p>
-                                                    </div>
-                                                </div>
-                                                <!-- shipping price end -->
-                                                
-                                                <!-- total price start -->
-                                                <div class="price-item total-price flex-between"> 
-                                                    <div>
-                                                        <h4>TOTAL  </h4>
-                                                    </div>
-                                                    <div>
-                                                        <h2>$132.00</h2>
-                                                    </div>
-                                                </div>
-                                                <!-- total price end -->
-                                            </div>
-                                            
-                                            <!-- Check out Start Here -->
-                                            <div class="checkout">
-                                                <button onclick="checkO()" id="checkout-btn">Checkout</button>
-                                            </div>
-                                            <!-- Check out End Here -->
-                                        </div>
-                                        <!-- price section end here -->
+                                    <div class="price-item">
+                                        <div><p>Discount </p></div>
+                                        <div><strong>$122.00</strong></div>
+                                    </div>
+                                    <div class="price-item">
+                                        <div><p>Shipping Flat</p></div>
+                                        <div><strong>$122.00</strong></div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- cart calculation and shipping address end -->
+                            
+                            
+                            <!-- order summery items -->
+                            <div class="order-summery-items">
+                                
+                            </div>
                         </div>
-                        <!-- cart body -->
                     </div>
+                    <!-- order summery area end-->
                 </div>
             </div>
         </section>
-        <!-- ----------cart section end here------------- -->
-        
-        
-        
-        
-        
-        
-        
-        
-        <!-- ------------  Join NewLetter Section  Start------------- -->
-        <section>
-            <div class="newletter">
-                <div class="newletter-content-area container flex-between">
-                    <div class="newletter-data  flex-column-15">
-                        <div><h3>Join Our Newsletter</h3></div>
-                        <div><p>Get E mail update about our latest shop and <strong>Spcial offer</strong></p></div>
-                    </div>
-                    <div class="newletter-input-area flex-start">
-                        <div class="newletter-input-form">
-                            <input type="text" placeholder="Your emil address">
-                            <i class="ri-mail-line"></i>
-                        </div>
-                        <div class="newletter-btn">
-                            <button>Sign Up</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ------------  Join NewLetter Section  End------------- -->
         
     </main>
     

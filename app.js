@@ -45,6 +45,13 @@ document.addEventListener("DOMContentLoaded", function () {
   })
   
   
+  
+  // checkout btn
+ function checkO (){
+  window.location.href = 'checkout.html'
+}
+  
+  
 // color 
 const colorsContainer = document.querySelector('.product-colors');
 

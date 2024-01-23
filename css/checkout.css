@@ -1,0 +1,86 @@
+
+
+
+
+
+/* checkout-content-area */
+
+.full-address{
+    width: 45%;
+}
+
+.full-address-form-area{
+    background-color: var(--white-medium);
+    padding: 40px;
+}
+.full-address-form-area form{
+    padding:  40px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.full-address-form-area form .shipping-input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.full-address-form-area form .shipping-input.flex-start{
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 14.2px;
+    color: var(--dark-color);
+}
+
+.full-address-form-area form .shipping-input.flex-start input{
+    width: 14px;
+}
+.full-address-form-area form div label{
+    font-weight: 600;
+}
+.full-address-form-area form div input,.full-address-form-area form div textarea{
+    padding: 8px 13px;
+    border: none;
+    background-color: aliceblue;
+    width: 85%;
+    resize:none;
+    outline: none;
+}
+.full-address-form-area form .shipping-input h1{
+    font-size: var(--2xl-font);
+}
+.full-address-form-area form .shipping-input button{
+    padding: 15px ;
+    width: 85%;
+    border-radius: 44px;
+    background-color: var(--orange-color);
+    color:var(--white-color);
+    letter-spacing: .5px;
+}
+.full-address-form-area form .shipping-input button:hover{
+    background-color: var(--dark-color);
+}
+
+
+
+
+
+
+
+
+
+/* order-summery */
+.order-summery {
+    padding: 15px;
+    flex-basis: 35%;
+    background-color: rgb(255, 248, 235);
+}
+
+.order-summery-price{
+    border-top: var(--border);
+    padding-top: 5px;
+}
+.order-summery-price h2{
+    font-size: var(--2xl-font);
+}

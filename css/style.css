@@ -73,6 +73,14 @@ button{
     border-radius: 4px;
     font-size: 15px;
     cursor: pointer;
+    border: 1px solid transparent;
+    transition: .3s;
+}
+button:active{
+    border: 1px solid rgba(155, 92, 219, 0.637);
+}
+input{
+    outline: none;
 }
 
 /* ==========  Common Class Start Here  ========= */

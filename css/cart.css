@@ -223,3 +223,73 @@
 .price-area .checkout button:hover{
     background-color: blueviolet;
 }
+
+
+
+
+
+
+/* newletter */
+.newletter{
+    background-color: var(--navy-color);
+    padding: 35px 0;
+}
+.newletter-data h3{
+    color: var(--white-color);
+    letter-spacing: .5px;
+    font-size: var(--xl-font);
+}
+.newletter-data p{
+    color: var(--white-medium);
+}
+.newletter-data p strong {
+    color: var(--orange-color);
+}
+
+
+/* newletter-input */
+.newletter-input-area.flex-start{
+    gap:0;
+    justify-content: flex-end;
+}
+.newletter-input-area,.newletter-data{
+    width: 50%;
+}
+.newletter-input-area{
+    /* background-color: orange; */
+}
+.newletter-input-form{
+    position: relative;
+    width: 70%;
+}
+.newletter-input-form input{
+    outline: 0;
+    border: 0;
+    padding: 12px;
+    border-radius: 5px;
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.newletter-input-form input::placeholder{
+    padding-left: 30px;
+}
+.newletter-input-form  i {
+    position: absolute;
+    left: 10px;
+    color: rgb(134, 133, 130);
+    top: 10px;
+}
+
+.newletter-btn button{
+    padding: 11.5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: var(--orange-color);
+    color:var(--white-color);
+    font-weight: 600;
+}
+.newletter-btn button:hover{
+    background-color: var(--white-medium);
+    color: var(--dark-color);
+}
