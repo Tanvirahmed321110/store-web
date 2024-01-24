@@ -288,7 +288,7 @@
     
     
     
-    /* ======================= product-page  ================ */
+    /* ======================= product-page  ===================== */
     .product-all-data.flex-between{
         flex-direction: column;
     }
@@ -299,15 +299,32 @@
     .product-all-data .product-page-image, .product-all-data .product-page-data {
         width: 100%;
     }
+    .add-to-cart-area.flex-start{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .add-to-cart-area .btn {
+        background-color: var(--orange-color);
+        color: white;
+        padding: 10px 30px;
+        position: relative;
+        overflow: hidden;
+        min-width: 200PX;
+        text-align: center;
+    }
+    .datiles-item table {
+        width: 92%;
+        margin-left: 20px;
+        border-collapse: collapse;
+    }
     
     
-    
-    /* ======================= cart -page  ================ */
+    /* ========================= cart -page  ======================== */
     .cart-body.flex-between {
         flex-direction: column;
     }
     .cart-cal-shipping {
-        width: 80%;
+        width: 85%;
         margin:0 auto;
     }
     .cart-body table tbody td {
@@ -332,6 +349,9 @@
     }
     .cart-body table tbody h4, .cart-body table tbody h3 {
         font-size: 14px;
+    }
+    .cart-items-area {
+        width: 100%;
     }
     .cart-items-area table {
         width: 100%;
@@ -360,5 +380,72 @@
     }
     .cart-body .quintity button {
         padding: 3px 8px;
+    }
+    
+    
+    
+    /* "newletter-content-area container flex-between" */
+    .newletter-input-area, .newletter-data {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .newletter-content-area.flex-between{
+        flex-direction: column;
+        gap:25px;
+    }
+    .newletter-input-form {
+        margin: 0 auto;
+        flex-grow: 1;
+    }
+    .newletter-btn button {
+        min-width: 84px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* ============ catagory page  ================== */
+    .catagory-content-area {
+        display: flex;
+        justify-content: unset;
+        gap: 50px;
+        flex-direction: column;
+    }
+    .catagory-items {
+        width: 100%;
+    }
+    .drop-blank {
+        width: 0%;
+    }
+    .drop-items.flex-center{
+        gap: 8px;
+    }
+    .drop-item h4 {
+        font-size: 14px;
+    }
+    
+    
+    
+    
+    /* =====================   Check out Page  ===================== */
+    .checkout-content-area.flex-between {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 50PX;
+    }
+    .full-address {
+        width: 100%;
+    }
+    .full-address-form-area form div input, .full-address-form-area form div textarea {
+        width: 95%;
+    }
+    .order-summery {
+        width: 100% ;
     }
 }
