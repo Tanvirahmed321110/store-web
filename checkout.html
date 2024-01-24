@@ -28,7 +28,7 @@
                     </div>
                     <!-- Header --- Top Left Site End ---- -->
                     <!-- Header --- Top Right Site Start  ---- -->
-                    <div class="header-top-right">
+                    <div class="header-top-right" id="top-right-header">
                         <ul class="flex-center-20">
                             <li><a href="#">Sign Up</a></li>
                             <li><a href="#">My Account</a></li>
@@ -54,7 +54,13 @@
                         </ul>
                     </div>
                     <!-- Header --- Top Right Site End  ---- -->
+                    
+                    <!-- mobile menu -->
+                    <div onclick="topHederToggle()" class="mobile-menu-top-header" id="top-header-menu">
+                        <a href="#" class="ri-align-justify"></a>
+                    </div>
                 </div>
+                
                 <!-- Header --- Top End Here  ---- -->
                 
                 
@@ -68,11 +74,11 @@
                         <!-- header bottom Left start here -->
                         <div class="header-bottom-left flex-center-20">
                             <div class="logo">
-                                <h2><a href="#">.Store</a></h2>
+                                <a href="index.html"><h2>.Store</h2></a>
                             </div>
                             <ul class="flex-center-20">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Shop </a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="product.html">Shop </a></li>
                                 <!-- -------  Mega Drop Down women ---------- -->
                                 <li class="mega-drop-women"><a href="#">Women <i class="ri-arrow-down-s-line"></i></a>
                                     <div class="women-drop-content-area flex-between">
@@ -144,18 +150,22 @@
                                     </div>
                                 </li>
                                 <!-- -------  Mega Drop Down women end ---------- -->
-                                <li><a href="#">Men</a></li>
-                                <li class="sports"><a href="#">Sports <span>New!</span></a></li>
+                                <li><a href="checkout.html">Men</a></li>
+                                <li class="sports"><a href="catagory.html">Sports <span>New!</span></a></li>
                             </ul>
                         </div>
                         <!-- header bottom left start here -->
                         <!-- header bottom right start here -->
-                        <div class="header-bottom-right">
+                        <div class="header-bottom-right" id="header-bottom-right">
                             <ul class="flex-center-20">
                                 <li><a href="#" class="ri-heart-line"> <span>0</span></a></li>
-                                <li><a href="#" class="ri-shopping-cart-line"> <span>0</span></a></li>
+                                <li><a href="cart.html" class="ri-shopping-cart-line"> <span>0</span></a></li>
                                 <li><a href="#">Total</a> <p>$0.00</p> </li>
                             </ul>
+                        </div>
+                        
+                        <div onclick="bottomHeaderToggle()" class="mobile-menu-top-header" id="bottom-header-menu">
+                            <a href="#" class="ri-align-justify"></a>
                         </div>
                         <!-- header bottom right start here -->
                     </div>
@@ -181,7 +191,7 @@
                 <div>
                     <a id="search-bar" class="ri-align-right" href="#"></a>
                     
-                    <ul id="all-departments-drop" class="all-departments-drop flex-column-20">
+                    <ul class="all-departments-drop flex-column-20">
                         <!-- drop items start-->
                         <li>
                             <a href="#" class="flex-between"> 

@@ -264,7 +264,8 @@
         flex-wrap: wrap;
     }
     .another-items .item{
-        max-width:48% ;
+        width:90% ;
+        margin: 0 auto;
     }
     
     .contact-content-area{

@@ -27,7 +27,7 @@
                     </div>
                     <!-- Header --- Top Left Site End ---- -->
                     <!-- Header --- Top Right Site Start  ---- -->
-                    <div class="header-top-right">
+                    <div class="header-top-right" id="top-right-header">
                         <ul class="flex-center-20">
                             <li><a href="#">Sign Up</a></li>
                             <li><a href="#">My Account</a></li>
@@ -53,7 +53,13 @@
                         </ul>
                     </div>
                     <!-- Header --- Top Right Site End  ---- -->
+                    
+                    <!-- mobile menu -->
+                    <div onclick="topHederToggle()" class="mobile-menu-top-header" id="top-header-menu">
+                        <a href="#" class="ri-align-justify"></a>
+                    </div>
                 </div>
+                
                 <!-- Header --- Top End Here  ---- -->
                 
                 
@@ -61,105 +67,109 @@
                 
                 
                 
-                <!-- Header --- Bottomn Start Here  ---- -->
-                <div class="header-bottom">
-                    <div class="header-bottom-content-area flex-between">
-                        <!-- header bottom Left start here -->
-                        <div class="header-bottom-left flex-center-20">
-                            <div class="logo">
-                                <h2>.Store</h2>
-                            </div>
-                            <ul class="flex-center-20">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Shop </a></li>
-                                <!-- -------  Mega Drop Down women ---------- -->
-                                <li class="mega-drop-women"><a href="#">Women <i class="ri-arrow-down-s-line"></i></a>
-                                    <div class="women-drop-content-area flex-between">
-                                        <div class="women-drop-items flex-center-20">
-                                            <ul>
-                                                <h4>WOMEN'S CLOTHING</h4>
-                                                <li class="dress-drop-main"><a href="#">Dress <i class="ri-arrow-right-s-line"></i></a>
-                                                    <ul class="dress-drop">
-                                                        <li><a href="#">Baby Dress</a></li>
-                                                        <li><a href="#">Child Dress</a></li>
-                                                        <li><a href="#">Old Person Dr</a></li>
-                                                        <li><a href="#">Top Collection</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Tops & Tees</a></li>
-                                                <li><a href="#">Jackets & Coats</a></li>
-                                                <li><a href="#">Pants & Capris</a></li>
-                                                <li><a href="#">Seeaters</a></li>
-                                                <li><a href="#">Shorts</a></li>
-                                                <li><a href="#">Winter Collection</a></li>
-                                                <li><a href="#">COstumes</a></li>
-                                                <li><a href="#">Baby Colection </a></li>
-                                            </ul>
-                                            <ul>
-                                                <h4>JEWELRY</h4>
-                                                <li><a href="#"> Accessories</a></li>
-                                                <li><a href="#">Bags </a></li>
-                                                <li><a href="#">Curi and Other</a></li>
-                                                <li><a href="#">Necklaces</a></li>
-                                                <li><a href="#">Rings</a></li>
-                                                <li><a href="#">Earrings</a></li>
-                                                <li><a href="#">Body Jewelry</a></li>
-                                                <li><a href="#">Other</a></li>
-                                            </ul>
-                                            <ul>
-                                                <h4>BEAUTY</h4>
-                                                <li><a href="#">Bath Accessories</a></li>
-                                                <li><a href="#">Makeup & Cosmetis</a></li>
-                                                <li><a href="#">Skin Care</a></li>
-                                                <li><a href="#">Pants & Capris</a></li>
-                                                <li><a href="#">Hair Care</a></li>
-                                                <li><a href="#">Hair Oil</a></li>
-                                                <li><a href="#">Skin Oil</a></li>
-                                                <li><a href="#">Face Cream</a></li>
-                                                <li><a href="#">Baby Kits </a></li>
-                                            </ul>
-                                            <ul>
-                                                <h4>TOP BRANDS</h4>
-                                                <li><a href="#">Nike </a></li>
-                                                <li><a href="#">Louis & Tees</a></li>
-                                                <li><a href="#">Bata</a></li>
-                                                <li><a href="#">Pants </a></li>
-                                                <li><a href="#">Seeaters</a></li>
-                                                <li><a href="#">Shorts</a></li>
-                                                <li><a href="#">Zara</a></li>
-                                                <li><a href="#">Panda</a></li>
-                                                <li><a href="#">Channel </a></li>
-                                                <li><a href="#">Hero </a></li> 
-                                                <li><a href="#">View all brands -> </a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="drop-img">
-                                            <img src="assets/products/apparel4.jpg" alt="">
-                                            <div class="drop-img-title">
-                                                <h2>MOST <br> WANTED!</h2>
-                                                <a href="#" class="btn">Order Now</a>
-                                            </div>
+            <!-- Header --- Bottomn Start Here  ---- -->
+            <div class="header-bottom">
+                <div class="header-bottom-content-area flex-between">
+                    <!-- header bottom Left start here -->
+                    <div class="header-bottom-left flex-center-20">
+                        <div class="logo">
+                            <a href="index.html"><h2>.Store</h2></a>
+                        </div>
+                        <ul class="flex-center-20">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="product.html">Shop </a></li>
+                            <!-- -------  Mega Drop Down women ---------- -->
+                            <li class="mega-drop-women"><a href="#">Women <i class="ri-arrow-down-s-line"></i></a>
+                                <div class="women-drop-content-area flex-between">
+                                    <div class="women-drop-items flex-center-20">
+                                        <ul>
+                                            <h4>WOMEN'S CLOTHING</h4>
+                                            <li class="dress-drop-main"><a href="#">Dress <i class="ri-arrow-right-s-line"></i></a>
+                                                <ul class="dress-drop">
+                                                    <li><a href="#">Baby Dress</a></li>
+                                                    <li><a href="#">Child Dress</a></li>
+                                                    <li><a href="#">Old Person Dr</a></li>
+                                                    <li><a href="#">Top Collection</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Tops & Tees</a></li>
+                                            <li><a href="#">Jackets & Coats</a></li>
+                                            <li><a href="#">Pants & Capris</a></li>
+                                            <li><a href="#">Seeaters</a></li>
+                                            <li><a href="#">Shorts</a></li>
+                                            <li><a href="#">Winter Collection</a></li>
+                                            <li><a href="#">COstumes</a></li>
+                                            <li><a href="#">Baby Colection </a></li>
+                                        </ul>
+                                        <ul>
+                                            <h4>JEWELRY</h4>
+                                            <li><a href="#"> Accessories</a></li>
+                                            <li><a href="#">Bags </a></li>
+                                            <li><a href="#">Curi and Other</a></li>
+                                            <li><a href="#">Necklaces</a></li>
+                                            <li><a href="#">Rings</a></li>
+                                            <li><a href="#">Earrings</a></li>
+                                            <li><a href="#">Body Jewelry</a></li>
+                                            <li><a href="#">Other</a></li>
+                                        </ul>
+                                        <ul>
+                                            <h4>BEAUTY</h4>
+                                            <li><a href="#">Bath Accessories</a></li>
+                                            <li><a href="#">Makeup & Cosmetis</a></li>
+                                            <li><a href="#">Skin Care</a></li>
+                                            <li><a href="#">Pants & Capris</a></li>
+                                            <li><a href="#">Hair Care</a></li>
+                                            <li><a href="#">Hair Oil</a></li>
+                                            <li><a href="#">Skin Oil</a></li>
+                                            <li><a href="#">Face Cream</a></li>
+                                            <li><a href="#">Baby Kits </a></li>
+                                        </ul>
+                                        <ul>
+                                            <h4>TOP BRANDS</h4>
+                                            <li><a href="#">Nike </a></li>
+                                            <li><a href="#">Louis & Tees</a></li>
+                                            <li><a href="#">Bata</a></li>
+                                            <li><a href="#">Pants </a></li>
+                                            <li><a href="#">Seeaters</a></li>
+                                            <li><a href="#">Shorts</a></li>
+                                            <li><a href="#">Zara</a></li>
+                                            <li><a href="#">Panda</a></li>
+                                            <li><a href="#">Channel </a></li>
+                                            <li><a href="#">Hero </a></li> 
+                                            <li><a href="#">View all brands -> </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="drop-img">
+                                        <img src="assets/products/apparel4.jpg" alt="">
+                                        <div class="drop-img-title">
+                                            <h2>MOST <br> WANTED!</h2>
+                                            <a href="#" class="btn">Order Now</a>
                                         </div>
                                     </div>
-                                </li>
-                                <!-- -------  Mega Drop Down women end ---------- -->
-                                <li><a href="#">Men</a></li>
-                                <li class="sports"><a href="#">Sports <span>New!</span></a></li>
-                            </ul>
-                        </div>
-                        <!-- header bottom left start here -->
-                        <!-- header bottom right start here -->
-                        <div class="header-bottom-right">
-                            <ul class="flex-center-20">
-                                <li><a href="#" class="ri-heart-line"> <span>0</span></a></li>
-                                <li><a href="#" class="ri-shopping-cart-line"> <span>0</span></a></li>
-                                <li><a href="#">Total</a> <p>$0.00</p> </li>
-                            </ul>
-                        </div>
-                        <!-- header bottom right start here -->
+                                </div>
+                            </li>
+                            <!-- -------  Mega Drop Down women end ---------- -->
+                            <li><a href="checkout.html">Men</a></li>
+                            <li class="sports"><a href="catagory.html">Sports <span>New!</span></a></li>
+                        </ul>
                     </div>
+                    <!-- header bottom left start here -->
+                    <!-- header bottom right start here -->
+                    <div class="header-bottom-right" id="header-bottom-right">
+                        <ul class="flex-center-20">
+                            <li><a href="#" class="ri-heart-line"> <span>0</span></a></li>
+                            <li><a href="cart.html" class="ri-shopping-cart-line"> <span>0</span></a></li>
+                            <li><a href="#">Total</a> <p>$0.00</p> </li>
+                        </ul>
+                    </div>
+                    
+                    <div onclick="bottomHeaderToggle()" class="mobile-menu-top-header" id="bottom-header-menu">
+                        <a href="#" class="ri-align-justify"></a>
+                    </div>
+                    <!-- header bottom right start here -->
                 </div>
-                <!-- Header --- Bottomn End Here  ---- -->
+            </div>
+            <!-- Header --- Bottomn End Here  ---- -->
             </div>
         </div>
     </header>
@@ -180,7 +190,7 @@
                 <div>
                     <a id="search-bar" class="ri-align-right" href="#"></a>
                     
-                    <ul id="all-departments-drop" class="all-departments-drop flex-column-20">
+                    <ul class="all-departments-drop flex-column-20">
                         <!-- drop items start-->
                         <li>
                             <a href="#" class="flex-between"> 
@@ -330,6 +340,7 @@
         </div>
     </div>
     <!-- Header --- Search End Here  ---- -->
+    
     
     
     
