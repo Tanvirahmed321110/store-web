@@ -155,6 +155,21 @@
     
     
     
+    .women-drop-items.flex-center-20 {
+        gap: 55px;
+        flex-wrap: wrap;
+    }
+    .women-drop-content-area.flex-between{
+        flex-direction: column;
+    }
+    .drop-img {
+        width: 88%;
+        margin-top: 25px;
+        max-width: 400px;
+    }
+    
+    
+    
     
     /* -------------- search header  ----------------- */
     
