@@ -511,4 +511,13 @@
     .order-summery {
         width: 100% ;
     }
+    
+    
+    
+    
+    
+    /* ===============  Login Page ================== */
+    .login-content-area{
+        width: 390px;
+    }
 }

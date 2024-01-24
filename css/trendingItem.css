@@ -558,10 +558,9 @@ footer{
     padding: 25px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 10%;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    /* text-align: center; */
+    gap: 13%;
+    align-items: center; 
+    justify-content: center; 
 }
 .footer-item{
     display: flex;
@@ -572,6 +571,9 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.footer-item h4{
+    color: var(--dark-color);
 }
 
 .socials-media a{

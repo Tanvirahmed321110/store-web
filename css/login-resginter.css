@@ -1,0 +1,82 @@
+
+
+
+.login-content-area{
+    width: 420px;
+    margin: 0 auto;
+    padding: 30px 25px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background-color: #fff8f8b6;
+    border: var(--border);
+}
+.login-content-area button,.login-content-area .btn{
+    letter-spacing: .6px;
+    text-align: center;
+    font-size: 16px;
+}
+.login-content-area button{
+    border: 1px solid rgb(228, 227, 223);
+    font-weight: 500;
+    padding: 12px 15px;
+    color: #524f4f;
+    text-shadow: 1px 1px  rgb(151, 143, 143);
+    background-color:blueviolet;
+    color: var(--white-color);
+}
+.login-header h2{
+    font-size: var(--2xl-font);
+    font-weight: 700;
+    color: var(--dark-color);
+}
+.login-form input{
+    padding: 12px 15px;
+    border: var(--border);
+    outline: none;
+}
+.login-form button:hover{
+    background-color: rgb(67, 66, 68);
+}
+
+
+
+/* forgot password */
+.forget-pass small,.forget-pass a{
+    font-size: 13px;
+}
+.forget-pass a{
+    text-decoration: underline;
+}
+
+
+
+
+/* or-option */
+.or{
+    display: inline-block;
+    padding: 2px;
+    border-top: var(--border);
+    border-bottom: var(--border);
+    text-align: center;
+}
+.or-option{
+    margin-top: 25px;
+}
+.or-option .btn{
+    width: 70%;
+    margin:0 auto;
+    border: 1px solid rgba(0, 139, 139, 0.486);
+}
+.or-option .btn:hover{
+    background-color: var(--white-medium);
+}
+
+
+/* new-user */
+.new-user{
+    font-size: 14px;
+    text-decoration: underline;
+    text-align: right;
+    font-weight: 400;
+    color: rgb(161, 79, 238);
+}
