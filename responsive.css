@@ -26,29 +26,224 @@
 }
 
 
+
+
+
+
+
+
+
+
+
 @media (max-width:769px){
+    :root{
+        --xs-font: 13px;
+        --sm-font: 15px;
+        --md-font: 16px;
+        --lg-font: 18px;
+        --xl-font: 20px;
+        --2xl-font: 24px;
+        --3xl-font: 30px;
+    }
+    
+    .small-container {
+        padding: 0;
+    }
+    html{
+        overflow-x: hidden;
+    }
+    
+    
+    /*==============   header responsive  start  ============ */
+    .mobile-menu-top-header{
+        display: block;
+        padding: 2px 4px;
+        border: var(--border);
+        cursor: pointer;
+    }
+    .mobile-menu-top-header a{
+        font-size: 18px;
+    }
+    .header-top-right{
+        display: none;
+    }
+    .header-top-right.header-top-right-toggle{
+        display: block;
+    }
+    .header-top{
+        position: relative;
+    }
+    .header-top-right ul.flex-center-20{
+        background-color: whitesmoke;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        z-index: 6;
+        top: 40px;
+        align-items: flex-start;
+        width:100%;
+        gap: 10px;
+        padding-left: 10px;
+    }
+    .header-top-right ul li{
+        width: 100%;
+        border-bottom:1px solid orchid;
+        display:block;
+        padding-bottom: 10px;
+        cursor: pointer;
+    }
+    .drop-header{
+        margin-left: 60px;
+        
+    }
+    .drop-header li {
+        padding:5px 25px !important;
+    }
+    
+    
+    
+    /*---------- header-bottom-right -----------*/
+    .header-bottom-left .logo h2{
+        padding-right: 0;
+        font-size: 20px;
+    }
+    .header-bottom-left .logo h2::after{
+        height: 15px;
+        width: 15px;
+        top:1px;
+    }
+    .sports a span{
+        display: none;
+    }
+    .header-bottom-left.flex-center-20{
+        gap: 10px;
+    }
+    .header-bottom-left  ul.flex-center-20{
+        gap: 12px;
+    }
+    .header-bottom-left  ul.flex-center-20 li a{
+        font-size: 14px;
+    }
+    .header-bottom{
+        position: relative;
+    }
+    .header-bottom-right{
+        display: none;
+    }
+    .header-bottom-right.bottom-hedaer-right-toggle{
+        display: block;
+    }
+    
+    .header-bottom-right ul.flex-center-20 {
+        flex-direction: column;
+        width: 100% !important;
+        background-color: whitesmoke;
+        position: absolute;
+        left: 0;
+        align-items: flex-start;
+        z-index: 6;
+        padding: 10px 0;
+        top: 40px;
+    }
+    .header-bottom-right ul li{
+        display: block;
+        padding:10px 25px;
+        width: 100%;
+        border-bottom:1px solid orchid;
+    }
+    
+    
+    
+    
+    
+    /* -------------- search header  ----------------- */
+    
+    /* search header left site */
+    .header-search-content-area {
+        gap:8px;
+    }
+    .header-search-left{
+        width: 85%;
+        padding: 10px;
+    }
+    .header-search-left h5{
+        font-size: 14px;
+    }
+    .header-search-left p{
+        font-size: 11px;
+        padding-top: 4px;
+    }
+    .all-departments-drop li a, .all-departments-drop li a i {
+        font-weight: 500;
+        font-size: 13px;
+    }
+    .all-departments-drop li {
+        padding: 10px;
+    }
+    
+    
+    /* =========  search header input  ======== */
+        
+    .header-search-right-inner .input-inner{
+        width: 100%;
+        position: relative;
+    }
+    .header-search-right-inner .input-inner input{
+        padding: 5px 10px;
+        
+    }
+    .header-search-right-inner .input-inner i{
+        left: 6px;
+    }
+
+    .header-search-right-inner .btn{
+        height: 45px;
+        font-size: 14px;
+        padding: 12px 6px;
+    }
+        
+    /*==============   header responsive  end  ============ */
+    
+    
+    
+    /*==============   Slider responsive  start  ============ */
+    .banner-content-area{
+        width: 100%;
+        height: 400px;
+    }
+    
+    
+    
+    
+    
     .trending-products-inner {
         grid-template-columns: repeat(1,1fr);
         row-gap: 35px;
         column-gap: 30px;
     }
     .offer-product{
-        width: 45%;
+        width: 100%;
     }
     .offer-product-inner {
-        width: 100%;
-        border: 2px solid black;
-        padding: 40px 10px;
-        border-radius: 10px;
+        width: 75%;
+        margin: 0 auto;
+        flex-direction: column;
     }
     
     
     
     /*====  tremdomg body inner items  ==== */
+    
     .trending-body-inner {
         gap: 25px;
     }
     
+    .trending-body-inner {
+        flex-direction: column;
+    }    
+    .trending-products{
+        width: 100%;
+    }
     
     .all-featured-products {
         display: grid;
@@ -65,21 +260,105 @@
     .butter-sale-item{
         width: 100%;
     }
-    /* .item{
-        width: 49%;
-    } */
-    /* .another-items.flex-center-20 {
-        width: calc(100% - 15px);
-    } */
     .another-items.flex-center-20{
         flex-wrap: wrap;
     }
     .another-items .item{
-        max-width:49% ;
+        max-width:48% ;
     }
     
+    .contact-content-area{
+        padding: 20px;
+    }
     .contact-content-area.flex-center{
         flex-direction: column;
         gap: 50px;
+    }
+    
+    
+    /* featured-product */
+    .featured-product {
+        padding: 5px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    /* ======================= product-page  ================ */
+    .product-all-data.flex-between{
+        flex-direction: column;
+    }
+    .product-page-image.w-50{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .product-all-data .product-page-image, .product-all-data .product-page-data {
+        width: 100%;
+    }
+    
+    
+    
+    /* ======================= cart -page  ================ */
+    .cart-body.flex-between {
+        flex-direction: column;
+    }
+    .cart-cal-shipping {
+        width: 80%;
+        margin:0 auto;
+    }
+    .cart-body table tbody td {
+        padding: 25px 10px;
+        width: 20%;
+    }
+    .cart-body .item-image {
+        width: 30%;
+    }
+    .cart-body .item-image img {
+        width: 70px;
+        height: 70px;
+        padding: 2px;
+    }
+    .cart-body table tbody .img-title h4 {
+        font-size: 13px;
+    }
+    .cart-body .img-title.flex-start {
+        gap: 6px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cart-body table tbody h4, .cart-body table tbody h3 {
+        font-size: 14px;
+    }
+    .cart-items-area table {
+        width: 100%;
+    }
+    .cart-body table .thead th {
+        font-size: 14px;
+    }
+    .cart-body table .thead th {
+        padding: 25px 10px;
+        width: 20%;
+    }
+    .cart-body table tbody td {
+        padding: 25px 10px;
+        width: 15%;
+    }
+    .item-title-color.flex-column-15{
+        gap: 5px;
+    }
+    
+    
+    .cart-body .quintity {
+        border: var(--border);
+        padding: 3px 0;
+        margin: 0 auto;
+        width: 109px;
+    }
+    .cart-body .quintity button {
+        padding: 3px 8px;
     }
 }

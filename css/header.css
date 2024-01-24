@@ -54,6 +54,10 @@ header{
 }
 
 
+/* mobile menu */
+.mobile-menu-top-header{
+    display: none;
+}
 
 
 

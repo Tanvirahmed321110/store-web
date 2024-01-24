@@ -135,3 +135,30 @@ function addEvent (BtnId,operation){
 
 addEvent(plusBtn,'plus')
 addEvent(minusBtn,'minus')
+
+
+
+
+
+// top-header-menu
+
+
+
+function topHederToggle(){
+  let topHeaderMenu  = document.getElementById('top-header-menu')
+  let topHeaderMenuATag = topHeaderMenu.querySelector('a');
+  let topRightHeader = document.getElementById('top-right-header')
+  
+  topRightHeader.classList.toggle('header-top-right-toggle')
+  topHeaderMenuATag.classList.toggle("ri-close-fill")
+}
+
+
+function bottomHeaderToggle(){
+  let bottomHeaderRight = document.getElementById('header-bottom-right');
+  let bottomHeaderMenu = document.getElementById('bottom-header-menu');
+  let bottomHeaderMenuATag = bottomHeaderMenu.querySelector('a');
+  
+  bottomHeaderRight.classList.toggle('bottom-hedaer-right-toggle')
+  bottomHeaderMenuATag.classList.toggle("ri-close-fill")
+}
