@@ -27,8 +27,7 @@ header{
     background-color: var(--white-medium);
 }
 .header-top-right ul li ul li a{
-    
-    font-size: var(--xs-font);
+    font-size: var(--xs-font) ;
 }
 .drop-header{
     z-index: 2;
@@ -210,10 +209,11 @@ header{
     font-weight: 400;
     margin-top: 15px;
 }
-.drop-img-title{
+.drop-img-title {
     position: absolute;
-    bottom: 55px;
-    left: 25%;
+    left: 50%;
+    top:50%;
+    transform: translateX(-50%);
 }
 .drop-img-title h2{
     color: var(--navy-color);
